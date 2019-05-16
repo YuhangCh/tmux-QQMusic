@@ -1,4 +1,4 @@
-# Tmux QQMusic Plugin
+# Tmux iTunes Plugin
 
-Waiting for AppleScript capabilities of QQMusic..
+use like tmux-spotify
 
