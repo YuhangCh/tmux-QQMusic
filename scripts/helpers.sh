@@ -1,3 +1,5 @@
+mscApp_default="iTunes"
+
 get_tmux_option() {
   local option=$1
   local default_value=$2
@@ -16,12 +18,13 @@ set_tmux_option() {
 }
 
 current_track_property() {
-  local prop="${1}"
+  
+local prop="${1}"
+local mscApp="iTunes"
 read -r -d '' SCRIPT <<'END'
-set theApp to "Spotify"
-
+set theApp to "iTunes"
 if application theApp is running then
-  tell application "Spotify"
+  tell application "iTunes"
     return %s of current track as string
   end tell
 end if
