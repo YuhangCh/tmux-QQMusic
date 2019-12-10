@@ -9,14 +9,14 @@ stopped_icon=""
 
 playing_default="▶︎"
 paused_default="■"
-mscApp_default="Spotify"
+mscApp_default="spotify"
 
 spotify_status() {
 read -r -d '' SCRIPT <<'END'
-set theApp to "iTunes"
+set theApp to "Music"
 
 if application theApp is running then
-  tell application "iTunes"
+  tell application "Music"
     return player state as string
   end tell
 end if
